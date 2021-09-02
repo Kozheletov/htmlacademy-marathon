@@ -16,9 +16,11 @@ body {
   /* font-family: 'Playfair Display', serif; */
 }
 
-a {
+a,
+button {
   display: inline-block;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 a:hover,
@@ -29,6 +31,16 @@ a:focus {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 36px;
+  color: var(--main-color);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -52,6 +64,12 @@ img {
   transition: all 0.3s;
 }
 
+.btn {
+  border: none;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--main-color);
@@ -64,7 +82,8 @@ img {
 }
 
 .inner-container {
-  max-width: 1200px;
+  max-width: 1220px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -111,8 +130,8 @@ img {
   min-height: 485px;
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(384px, 1fr));
-  column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  grid-gap: 20px;
 }
 
 .hero-title {
@@ -136,6 +155,13 @@ img {
   color: var(--main-color);
 }
 
+.hero-bouquet-1,
+.hero-bouquet-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-bouquet-1 {
   align-self: end;
 }
@@ -144,9 +170,13 @@ img {
 
 .advantages-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, minmax(373px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
   column-gap: 40px;
   color: var(--main-color);
+}
+
+.advantages {
+  margin-bottom: 80px;
 }
 
 .advantages-subtitle {
@@ -195,4 +225,50 @@ img {
   height: 52px;
   top: 0;
   left: -79px;
+}
+
+/* section slider */
+
+.slider {
+  margin-bottom: 80px;
+}
+
+.slider-wrapper {
+  max-width: 794px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.slider-block {
+  max-width: 387px;
+  color: var(--main-color);
+}
+
+.slider-block:first-child {
+  margin-right: 20px;
+}
+
+.slider-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.sider-description {
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+
+.slider-size {
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+
+.slider-price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 65px;
 }
