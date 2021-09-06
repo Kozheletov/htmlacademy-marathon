@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -85,30 +86,69 @@
         </div>
       </div>
     </section>
+
     <section class="slider">
       <h2 class="section-title">Популярные букеты</h2>
-      <div class="slider-wrapper">
-        <div class="slider-block">
-          <h3 class="slider-title">Букет &#171;Надежда&#187;</h3>
-          <p class="sider-description">
-            Элегантный букет, который станет отличным подарком на день рождения или юбилей.
-          </p>
-          <p class="slider-size">30 &#215; 40 см</p>
-          <p class="slider-price">3600 руб.</p>
-          <button class="button btn" type="button">Заказать</button>
-        </div>
-        <div class="slider-block">
-          <img src="img/slider-image.png" alt="Букет цветов" />
+
+      <div class="swiper">
+        <div class="swiper-wrapper slider-wrapper-custom">
+
+          <div class="slider-container swiper-slide">
+            <div class="slider-block">
+              <h3 class="slider-title">Букет &#171;Надежда&#187;</h3>
+              <p class="sider-description">
+                Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+              </p>
+              <p class="slider-size">30 &#215; 40 см</p>
+              <p class="slider-price">3600 руб.</p>
+              <button class="button btn" type="button">Заказать</button>
+            </div>
+            <div class="slider-block">
+              <img src="img/slider-image.png" alt="Букет цветов" />
+            </div>
+
+          </div>
+
+          <div class="slider-container swiper-slide">
+            <div class="slider-block">
+              <h3 class="slider-title">Букет &#171;Надежда&#187;</h3>
+              <p class="sider-description">
+                Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+              </p>
+              <p class="slider-size">30 &#215; 40 см</p>
+              <p class="slider-price">3600 руб.</p>
+              <button class="button btn" type="button">Заказать</button>
+            </div>
+            <div class="slider-block">
+              <img src="img/slider-image.png" alt="Букет цветов" />
+            </div>
+
+          </div>
+
+          <div class="slider-container swiper-slide">
+            <div class="slider-block">
+              <h3 class="slider-title">Букет &#171;Надежда&#187;</h3>
+              <p class="sider-description">
+                Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+              </p>
+              <p class="slider-size">30 &#215; 40 см</p>
+              <p class="slider-price">3600 руб.</p>
+              <button class="button btn" type="button">Заказать</button>
+            </div>
+            <div class="slider-block">
+              <img src="img/slider-image.png" alt="Букет цветов" />
+            </div>
+
+          </div>
+
         </div>
         <div class="slider-arrows">
-          <button class="slider-arrow slider-arrow-prev" type="button">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <button class="slider-arrow slider-arrow-next" type="button">
-            <span class="visually-hidden">Вперед</span>
-          </button>
+          <button class="slider-arrow-prev"><span class="visually-hidden">Назад</span></button>
+          <button class="slider-arrow-next"><span class="visually-hidden">Вперед</span></button>
         </div>
       </div>
+
+
     </section>
     <section class="catalog">
       <div class="inner-container">
@@ -297,6 +337,7 @@
       </ul>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 

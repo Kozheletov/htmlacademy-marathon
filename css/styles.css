@@ -238,7 +238,15 @@ img {
   margin-bottom: 80px;
 }
 
-.slider-wrapper {
+.swiper {
+  max-width: 794px;
+}
+
+.slider-wrapper-custom {
+  padding-bottom: 18px;
+}
+
+.slider-container {
   position: relative;
   max-width: 794px;
   margin: 0 auto;
@@ -291,7 +299,8 @@ img {
   transform: translate(-50%);
 }
 
-.slider-arrow {
+.slider-arrow-prev,
+.slider-arrow-next {
   width: 51px;
   height: 16px;
   outline: none;
@@ -300,6 +309,7 @@ img {
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .slider-arrow-prev {
